@@ -37,6 +37,6 @@ spec:
             value: --requeue-dependency=5s
   sync:
     kind: GitRepository
-    url: "https://github.com:devcraft-nl/devcraft-cluster.git"
+    url: "https://github.com/devcraft-nl/devcraft-cluster.git"
     ref: "refs/heads/main"
     path: "clusters/local"
