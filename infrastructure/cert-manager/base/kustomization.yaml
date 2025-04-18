@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - namespace.yaml
   - helm-repository.yaml
-  - ingress-nginx.yaml
+  - cert-manager.yaml
