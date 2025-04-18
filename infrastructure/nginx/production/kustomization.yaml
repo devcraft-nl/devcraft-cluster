@@ -8,4 +8,4 @@ patches:
   - path: ingress-nginx.yaml
     target:
       kind: HelmRelease
-      name: nginx
+      name: ingress-nginx
