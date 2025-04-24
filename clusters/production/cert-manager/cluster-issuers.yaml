@@ -6,7 +6,6 @@ metadata:
 spec:
   acme:
     email: dkroesen@devcraft.nl
-    # The server is replaced in /clusters/production/infrastructure.yaml
     server: https://acme-v02.api.letsencrypt.org/directory
     privateKeySecretRef:
       name: letsencrypt-nginx
