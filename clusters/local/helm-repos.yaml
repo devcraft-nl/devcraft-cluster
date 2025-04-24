@@ -1,17 +1,15 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: cert-manager
+  name: helm-repos
   namespace: flux-system
 spec:
   interval: 1h
   retryInterval: 1m
   timeout: 5m
-  dependsOn:
-    - name: helm-installs
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./clusters/local/cert-manager
+  path: ./infrastructure/helm-repos/local
   prune: true
   wait: true
