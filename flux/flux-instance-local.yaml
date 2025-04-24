@@ -38,5 +38,5 @@ spec:
   sync:
     kind: GitRepository
     url: "https://github.com/devcraft-nl/devcraft-cluster.git"
-    ref: "refs/heads/main"
+    ref: "refs/heads/feature/cluster-restructure"
     path: "clusters/local"
