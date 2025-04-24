@@ -17,8 +17,8 @@ spec:
   values:
     controller:
       annotations:
-        - service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
-        - service.beta.kubernetes.io/do-loadbalancer-hostname: "lb.devcraft.nl"
+        service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'true'
+        service.beta.kubernetes.io/do-loadbalancer-hostname: "lb.devcraft.nl"
       replicaCount: 2
       service:
         type: "LoadBalancer"
