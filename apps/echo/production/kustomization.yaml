@@ -3,4 +3,4 @@ kind: Kustomization
 namespace: echo
 resources:
   - ../base
-  - ingress.yaml
+#  - ingress.yaml
