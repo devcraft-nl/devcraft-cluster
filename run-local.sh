@@ -1,6 +1,6 @@
 #!/bin/bash
 
-kind create cluster -n devcraft-local --config cluster-config.yaml
+kind create cluster -n devcraft-local --config local-cluster-config.yaml
 
 kubectl cluster-info --context kind-devcraft-local
 

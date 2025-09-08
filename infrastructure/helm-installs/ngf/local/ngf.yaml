@@ -9,3 +9,10 @@ spec:
     kind: OCIRepository
     name: ngf
     namespace: flux-system
+  values:
+    nginx:
+      service:
+        type: NodePort
+        nodePorts:
+          port: 31437
+          listenerPort: 80
