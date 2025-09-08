@@ -6,6 +6,11 @@ metadata:
     cert-manager.io/cluster-issuer: "letsencrypt"
 spec:
   ingressClassName: nginx
+  tls: # < placing a host in the TLS config will determine what ends up in the cert's subjectAltNames
+    - hosts:
+        - echo1.dkroesen.nl
+        - echo2.dkroesen.nl
+      secretName: echo-cert # < cert-manager will store the created certificate in this secret.
   rules:
     - host: echo1.dkroesen.nl
       http:
