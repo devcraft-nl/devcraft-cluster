@@ -4,3 +4,4 @@ resources:
   - jetstack-repository.yaml
   - ingress-repository.yaml
   - cnpg-repository.yaml
+  - ngf-repository.yaml

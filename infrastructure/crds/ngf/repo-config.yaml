@@ -5,10 +5,10 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m0s
-  path: ./config/crd/gateway-api/experimental
+  path: ./config/crd/gateway-api/standard
   prune: true
   sourceRef:
-    kind: GitRepository
-    name: nginx-gateway-fabric-repo
+    kind: OCIRepository
+    name: ngf
   timeout: 1m0s
   wait: true
