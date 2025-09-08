@@ -4,13 +4,8 @@ metadata:
   name: ngf
   namespace: nginx-gateway
 spec:
-  interval: 30m
-  chart:
-    spec:
-      chart: ngf
-      version: "*"
-      sourceRef:
-        kind: OCIRepository
-        name: ngf
-        namespace: flux-system
-      interval: 12h
+  interval: 12h
+  chartRef:
+    kind: OCIRepository
+    name: ngf
+    namespace: flux-system
