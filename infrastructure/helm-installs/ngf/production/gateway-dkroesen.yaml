@@ -6,7 +6,7 @@ metadata:
 spec:
   gatewayClassName: nginx
   listeners:
-    - name: http
-      port: 80
-      protocol: HTTP
-      hostname: "*.local.dkroesen.nl"
+    - name: https
+      port: 433
+      protocol: HTTPS
+      hostname: "*.dkroesen.nl"

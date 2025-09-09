@@ -6,9 +6,9 @@ metadata:
 spec:
   parentRefs:
     - name: gateway
-      sectionName: http
+      sectionName: https
   hostnames:
-    - "echo1.local.dkroesen.nl"
+    - "echo1.dkroesen.nl"
   rules:
     - matches:
         - path:
