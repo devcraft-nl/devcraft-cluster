@@ -12,6 +12,14 @@ spec:
       port: 80
       protocol: HTTP
     - name: https
-      port: 433
+      port: 443
       protocol: HTTPS
-      hostname: "*.dkroesen.nl"
+      hostname: "echo1.dkroesen.nl"
+      tls:
+        mode: Terminate
+        certificateRefs:
+          - kind: Secret
+            name: dkroesen-tls-secret
+      allowedRoutes:
+        namespaces:
+          from: All
