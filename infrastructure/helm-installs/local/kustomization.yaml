@@ -3,5 +3,4 @@ kind: Kustomization
 
 resources:
   - ../cert-manager/local
-  - ../nginx/local
   - ../ngf/local
