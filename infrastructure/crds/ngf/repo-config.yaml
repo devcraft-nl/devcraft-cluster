@@ -8,7 +8,7 @@ spec:
   path: ./config/crd/gateway-api/standard
   prune: true
   sourceRef:
-    kind: OCIRepository
-    name: ngf
+    kind: GitRepository
+    name: nginx-gateway-fabric-repo
   timeout: 1m0s
   wait: true

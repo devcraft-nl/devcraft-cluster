@@ -14,5 +14,5 @@ spec:
       service:
         type: NodePort
         nodePorts:
-          port: 31437
+        - port: 31437
           listenerPort: 80
