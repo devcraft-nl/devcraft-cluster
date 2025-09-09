@@ -5,7 +5,8 @@ metadata:
   namespace: echo
 spec:
   parentRefs:
-    - name: gateway
+    - name: gateway-dkroesen
+      namespace: nginx-gateway
       sectionName: https
   hostnames:
     - "echo1.dkroesen.nl"

@@ -1,11 +1,16 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: Gateway
 metadata:
-  name: gateway
+  name: gateway-dkroesen
   namespace: nginx-gateway
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
 spec:
   gatewayClassName: nginx
   listeners:
+    - name: http
+      port: 80
+      protocol: HTTP
     - name: https
       port: 433
       protocol: HTTPS
