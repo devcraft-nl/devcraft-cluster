@@ -11,7 +11,7 @@ spec:
     - name: http
       port: 80
       protocol: HTTP
-    - name: https
+    - name: https-echo1
       port: 443
       protocol: HTTPS
       hostname: "echo1.dkroesen.nl"
@@ -20,6 +20,18 @@ spec:
         certificateRefs:
           - kind: Secret
             name: dkroesen-tls-secret
+      allowedRoutes:
+        namespaces:
+          from: All
+    - name: https-api
+      port: 443
+      protocol: HTTPS
+      hostname: "api.dkroesen.nl"
+      tls:
+        mode: Terminate
+        certificateRefs:
+          - kind: Secret
+            name: api-dkroesen-tls-secret
       allowedRoutes:
         namespaces:
           from: All

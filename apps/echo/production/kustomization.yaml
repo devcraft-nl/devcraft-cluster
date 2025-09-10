@@ -4,4 +4,4 @@ namespace: echo
 resources:
   - ../base
   - route.yaml
-#  - ingress.yaml
+  - route_api.yaml

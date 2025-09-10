@@ -1,20 +1,20 @@
 apiVersion: gateway.networking.k8s.io/v1
 kind: HTTPRoute
 metadata:
-  name: echo1
+  name: api
   namespace: echo
 spec:
   parentRefs:
     - name: gateway-dkroesen
       namespace: nginx-gateway
-      sectionName: https-echo1
+      sectionName: https-api
   hostnames:
-    - "echo1.dkroesen.nl"
+    - "api.dkroesen.nl"
   rules:
     - matches:
         - path:
             type: PathPrefix
             value: /
       backendRefs:
-        - name: echo1
+        - name: api
           port: 80
