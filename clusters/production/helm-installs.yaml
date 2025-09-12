@@ -15,3 +15,7 @@ spec:
   path: ./infrastructure/helm-installs/production
   prune: true
   wait: true
+  decryption:
+    provider: sops
+    secretRef:
+      name: sops-gpg
