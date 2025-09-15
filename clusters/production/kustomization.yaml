@@ -5,4 +5,5 @@ resources:
   - crds.yaml
   - helm-installs.yaml
   - cert-manager.yaml
+  - cnpg.yaml
   - apps.yaml

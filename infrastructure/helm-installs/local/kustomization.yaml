@@ -5,3 +5,4 @@ resources:
   - ../cert-manager/local
   - ../ngf/local
   - ../grafana-alloy/local
+  - ../cnpg/local

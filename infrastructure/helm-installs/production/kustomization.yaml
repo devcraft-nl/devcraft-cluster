@@ -5,3 +5,4 @@ resources:
   - ../cert-manager/production
   - ../ngf/production
   - ../grafana-alloy/production
+  - ../cnpg/production

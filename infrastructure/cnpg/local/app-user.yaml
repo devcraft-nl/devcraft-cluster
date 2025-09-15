@@ -1,0 +1,41 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: app-user
+    namespace: cnpg
+type: kubernetes.io/basic-auth
+data:
+    password: ENC[AES256_GCM,data:hpret0SV/zdsQtu5KgKlx1vcDmdne5zmn9NC5tBWyWD3pwGLOf5zB8/qy/0TFeB0tZwD8mFPavaM/I4OBI4K/9e09wavLcjhVlJoF1+vpTrf24uKIFhtPpeJkIZqxsxvGJfj01spmGHgtu5Qzp4IQoL4sTqKGpGsVRFDQkBNdpxYSoXY8vz1KsYGz26gOIzYuCn7VsgnhHq9O1IXj3DkkRSyn8k6Cdj3A2Qoqw==,iv:SaqStIUryWZEYhNwzzi169d4eS7DxFj42PiYd+WNJPs=,tag:wfl3blK7fIqqhiISLj4eIg==,type:str]
+    username: ENC[AES256_GCM,data:CqpVzw==,iv:S3BD2SQQqB9uefwF3k7klf//yAydYUejvrribYA6AyU=,tag:/zWdxBMo7RrQ241xv4BbfQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-09-16T13:37:29Z"
+    mac: ENC[AES256_GCM,data:Foq+0zlYVnWlfp9sMa2oqt8ra0X7+yNscc7gyUJEk7UFwFhxcEoF5XihAH4Mn9RYAK9+XEQ4ruGGX19elruH7S1DkPUjOteHDh9a8BV9jt/47DBqpoBl/BDhY6GHgInr9i0/4yc7zoYAk08AZ/832aHfY7Vn4e6lhnXwv6VTUVA=,iv:hmSvWzrFWjeXLktyPzpd9sMm//3bfK1Y8m2kZGWgrgM=,tag:cud8UihwJdLXoOdTtFGGuw==,type:str]
+    pgp:
+        - created_at: "2025-09-16T13:37:28Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA7HkzTbKNKEvAQ/9Fhnr8huTcgprAH1s/wybYoPc4Ti6kYgun3j1ftPwFMsy
+            JlmqIEVQ+SFhupT46x+bYe0V+pk9PFdfYcZxeVCWN6pjPK5DEXjJg3NmRfAVRT5w
+            0yaKXGvdGsZilOFzzGDoC1xpH7kuMqyJmhvZPqyrSx2YCKnf7n4pdMXminkdlHzh
+            6/zKJ33HQ2yEE4q7y+ncooCCdm2DcuZmaXazIg9yxPELca8QMQ3+DFKij3rgWZos
+            94ZxPasTzrx2Cb0O33j0Jg49uatzw20HTOl1nb5lV/fAOqt4I48Zh3k3sNX0iZk2
+            tWva3SHECwRJ77My+PXBw7lEKscA+xHTr+BYrrlBR1PuzeUZn3DG0OTrCx8QLh1s
+            pbO5ybVJYqNS96HNlrIZbulrPeELaQ+q241nepM1VatTAQ6BsEaSDAhdO/xqcqbu
+            HdPfmBHtzPYGVHrK2rRD0ni/ETeFaRS7GHP30RrG5YG+LwCwPhTri1x73WEwHtKo
+            iONh3AMyHGNw2HOR26xQoRGPjZX7Nzd6dBRhys5i5q7G2P9JMHu/9vx0eIJ7RAPy
+            CCAVE2UlG2RC85AuC7F/EQEK8fX6p9PSNLgnsH0RxRKAi0oBgwxqVOcmnvJCrnts
+            VBFiCN7ZuvNacEGQI4Pu6au7fdgbE4grWqthxTe1CUeIjhcLe9uZkgVV1n87NuDU
+            aAEJAhAJ+WV0mWPz5gcBe9Idpc+ryd3CdoB04N9OGDUsRFSmj5zVduFQkmd3tuXA
+            O3IGKaQJWtRn8sZw1j73rU08pRvc4L12/X7rVCOFvs2eKsht1oEnW0OHOgPUyBEH
+            7jFn/6C81Doj
+            =RhUi
+            -----END PGP MESSAGE-----
+          fp: C2C715BB173803D1A33C0B9E64D72306B5CEADB8
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
