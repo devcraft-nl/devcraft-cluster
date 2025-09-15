@@ -4,4 +4,4 @@ kind: Namespace
 metadata:
   name: cnpg-system
   labels:
-    toolkit.fluxcd.io/tenant: sre-team
+    toolkit.fluxcd.io/tenant: infra
