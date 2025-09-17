@@ -118,6 +118,13 @@ prometheus.scrape "pods" {
 prometheus.remote_write "grafanacloud" {
   endpoint {
     url = "https://prometheus-prod-24-prod-eu-west-2.grafana.net/api/prom/push"
+    remote_timeout = "1m"
+    queue_config {
+        capacity = 50000
+        retry_on_http_429 = false
+        sample_age_limit = "5m"
+    }
+
     // Get basic authentication based on environment variables.
     basic_auth {
       username = "1601339"
