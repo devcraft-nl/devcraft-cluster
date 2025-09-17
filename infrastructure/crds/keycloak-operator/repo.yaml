@@ -1,0 +1,16 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: keycloak-operator-repo-crds
+  namespace: flux-system
+spec:
+  interval: 168h
+  ref:
+    tag: 26.3.4
+  url: https://github.com/keycloak/keycloak-k8s-resources
+  ignore: |
+    # exclude all
+    /*
+    # include crd files
+    !keycloakrealmimports.k8s.keycloak.org-v1.yml
+    !keycloaks.k8s.keycloak.org-v1.yml
