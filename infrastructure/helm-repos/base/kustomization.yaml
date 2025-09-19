@@ -6,3 +6,5 @@ resources:
   - cnpg-repository.yaml
   - ngf-repository.yaml
   - grafana-repository.yaml
+  - bitnami-repository.yaml
+  - authentik-repository.yaml

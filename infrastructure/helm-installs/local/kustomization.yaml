@@ -6,3 +6,4 @@ resources:
   - ../ngf/local
   - ../grafana-alloy/local
   - ../cnpg/local
+  - ../redis/local

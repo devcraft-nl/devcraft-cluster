@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - ../base
   - sa-user.yaml
-  - app-user.yaml
+  - auth-user.yaml
