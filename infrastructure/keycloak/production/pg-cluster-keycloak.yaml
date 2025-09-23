@@ -1,0 +1,25 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: pg-cluster-keycloak
+  namespace: keycloak
+spec:
+  instances: 1
+  imageCatalogRef:
+    apiGroup: postgresql.cnpg.io
+    kind: ClusterImageCatalog
+    name: postgresql
+    major: 17
+  storage:
+    size: 1Gi
+  enableSuperuserAccess: true
+  bootstrap:
+    initdb:
+      database: keycloak
+      owner: keycloak
+      secret:
+        name: keycloak-db-secret
+  superuserSecret:
+    name: superuser
+  monitoring:
+    enablePodMonitor: true

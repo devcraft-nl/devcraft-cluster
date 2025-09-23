@@ -6,4 +6,5 @@ resources:
   - helm-installs.yaml
   - cert-manager.yaml
   - cnpg.yaml
+  - auth.yaml
   - apps.yaml

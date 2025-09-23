@@ -35,3 +35,15 @@ spec:
       allowedRoutes:
         namespaces:
           from: All
+    - name: https-auth
+      port: 443
+      protocol: HTTPS
+      hostname: "auth.dkroesen.nl"
+      tls:
+        mode: Terminate
+        certificateRefs:
+          - kind: Secret
+            name: auth-dkroesen-tls-secret
+      allowedRoutes:
+        namespaces:
+          from: All

@@ -19,7 +19,7 @@ spec:
       name: keycloak-db-secret
       key: password
   hostname:
-    hostname: auth.local.dkroesen.nl
-    strict: false
+    hostname: auth.dkroesen.nl
+    strict: true
   proxy:
     headers: xforwarded # double check your reverse proxy sets and overwrites the X-Forwarded-* headers

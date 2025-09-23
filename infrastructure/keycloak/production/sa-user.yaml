@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Secret
+metadata:
+    name: superuser
+    namespace: cnpg
+data:
+    username: ENC[AES256_GCM,data:jGpkE11hS10Vq/Iw,iv:CVWDI+7mRrlxKnAlOV+QU3kugraNBWj5c4J6umut+PM=,tag:B9IjiRTGGwkCMfVs/LePtg==,type:str]
+    password: ENC[AES256_GCM,data:p6GYiAnD4vOW4KifZoGG+oRukpvyO+LJCE7CN/mjDrBdjF+Vdtf3fkB7A68zajhygdj/bli2VcP0ujXT7ZZ13jWsGIcX2J5o1/0rHeHQtOkUTequZY0yoCnGXRZElkLV739/Y9FPPVSdLUiWa2/1XLPMdAHIRJQn8JFF85CiG0KAmoD3iku7PslTrWHvo0X2Tvfqxhs+yHH59Mdt8cLjScA7IYdDSAqxHlanwg==,iv:uEE0Ka1zeS1tqp/BUO6/AuVR/zjuHbkN9bMJ3EIjN90=,tag:HXVQLiA6xx5GxfS529i1XQ==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2025-09-24T06:54:17Z"
+    mac: ENC[AES256_GCM,data:7PXZuy6QRCiHHXn7SRWf3rUmzWVDDyNh8YlwbsHQdzQRs/g2Ecb+whRETGfDhOfpuHqzN+D7QhddWDVMqltcQPAgUnSqCOo9TKyckNrfxvubC291eg7PnMUDyDy9C0G1DxT5xSI8+kpg4dbo1ARO1U5EfwentxCgyGqmad4WGEg=,iv:feD019qOuU+aGbG3a8ARueEwDNxIwDlPGNqgrES9eHA=,tag:0cRa6AYfdW4KSJr+onU7vg==,type:str]
+    pgp:
+        - created_at: "2025-09-24T06:54:17Z"
+          enc: |
+            -----BEGIN PGP MESSAGE-----
+
+            hQIMA5kkSf0WUgyKAQ/9FcYu0KO/SGpsSVhXqcEjlW70jUB9Jxq0WVgsFcDpSFjP
+            DlfnsH4+16O+uBG2lPSI9X3DWmo4iDYP8zRsaP4M/ZOmJ4NuQju17fNx15rhDBcL
+            djGDB8TTYw8uNf4YuFY1k02E+KwmCKL4gpaGxol9EYHTfMpcnFAYanUIsBSigBTW
+            6EIETjzHR5wOEtMth5+n3RxHhADeMKPKYLS6xaRWcmSypX0v41Dk4S4yzpHXdG5/
+            qsGXaYBPntvBIG+pa4lYa8sku4NTtzC40Dw97BfAcFPZoccJXXDqulWZMluXotyU
+            LA1q5SM4r2bzUYxtoqz9W6ptpFYBaoDtQlkDP9dtVJYfV6vsIVqC/SybTE+V5zCp
+            2qfIoazZLVubNI8KOiuTVRo89maZbGjudmA4bd08KEZCa/ddJyjVgMm/K2x1GtNR
+            aftYpEIMQBneie9BtscsAh/AhPjkpNMtRQlKKuGvuwRfew9SIrT3WPZslez1BGuf
+            wO+KnKqIK23LQvlUVmI+0vlxYzt2nqEpJLfzZIQYXS2ewm9MJ94TSQTH8vQrVzBS
+            q5LAG0nnNkac2zNH2OWTTFtg46cWmKUj8uDE++G1JDgoFBa019WMKjwIoZFTnmQp
+            GhMIK50ZUTUEc9N1oqXN1tfe8OxaARuBEKvsTX2tk5H82+56Pm3ZEvhlEdlH1mTU
+            aAEJAhC71uqJjKjsleQ8p6GDy7ewc+1uaFBD4RjCLyhqCW5qLAMFlk4GmQTvVznd
+            s3k/u1+M1YU8APURgI3geUfnx/KL78m+uu5btNEMUNSEadW4V6fZHCPRfIb255D+
+            NAKipeaMFHR7
+            =fz7a
+            -----END PGP MESSAGE-----
+          fp: 4527EAAAEF676E9D3802CB489BCD8CD0C1B5A8CE
+    encrypted_regex: ^(data|stringData)$
+    version: 3.7.3
