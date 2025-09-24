@@ -12,7 +12,7 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./infrastructure/helm-installs/local
+  path: ./clusters/local/helm-installs
   prune: true
   wait: true
   decryption:

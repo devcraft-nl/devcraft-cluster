@@ -10,6 +10,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: flux-system
-  path: ./infrastructure/crds/production
+  path: ./clusters/production/crds
   prune: true
   wait: true

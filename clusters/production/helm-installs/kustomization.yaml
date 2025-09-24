@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../../infrastructure/helm-installs/cert-manager/production
+  - ../../../infrastructure/helm-installs/ngf/production
+  - ../../../infrastructure/helm-installs/grafana-alloy/production
+  - ../../../infrastructure/helm-installs/cnpg/production
