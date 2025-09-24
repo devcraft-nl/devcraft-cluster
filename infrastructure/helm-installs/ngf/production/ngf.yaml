@@ -9,3 +9,7 @@ spec:
     kind: OCIRepository
     name: ngf
     namespace: flux-system
+  values:
+    nginxGateway:
+      gwAPIExperimentalFeatures:
+        enable: true

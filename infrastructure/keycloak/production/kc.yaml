@@ -2,12 +2,11 @@ apiVersion: k8s.keycloak.org/v2alpha1
 kind: Keycloak
 metadata:
   name: keycloak
+  namespace: keycloak-operator
 spec:
   instances: 1
   ingress:
     enabled: false
-  http:
-    httpEnabled: true
   db:
     vendor: postgres
     host: pg-cluster-keycloak-rw.keycloak-operator.svc.cluster.local
@@ -18,8 +17,11 @@ spec:
     passwordSecret:
       name: keycloak-db-secret
       key: password
+  http:
+    httpEnabled: true
+    tlsSecret: auth-dkroesen-tls-secret
   hostname:
     hostname: auth.dkroesen.nl
-    strict: true
+    strict: false
   proxy:
     headers: xforwarded # double check your reverse proxy sets and overwrites the X-Forwarded-* headers

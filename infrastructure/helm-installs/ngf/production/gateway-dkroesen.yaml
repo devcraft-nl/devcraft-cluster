@@ -1,4 +1,4 @@
-apiVersion: gateway.networking.k8s.io/v1
+apiVersion: gateway.networking.k8s.io/v1beta1
 kind: Gateway
 metadata:
   name: gateway-dkroesen
@@ -37,13 +37,15 @@ spec:
           from: All
     - name: https-auth
       port: 443
-      protocol: HTTPS
+      protocol: TLS
       hostname: "auth.dkroesen.nl"
       tls:
-        mode: Terminate
+        mode: Passthrough
         certificateRefs:
           - kind: Secret
             name: auth-dkroesen-tls-secret
       allowedRoutes:
+        kinds:
+          - kind: TLSRoute
         namespaces:
           from: All
