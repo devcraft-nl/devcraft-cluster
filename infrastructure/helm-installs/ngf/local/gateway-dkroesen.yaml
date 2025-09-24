@@ -12,7 +12,13 @@ spec:
       port: 80
       protocol: HTTP
       hostname: "echo1.local.dkroesen.nl"
+      allowedRoutes:
+        namespaces:
+          from: All
     - name: http-auth
       port: 80
       protocol: HTTP
       hostname: "auth.local.dkroesen.nl"
+      allowedRoutes:
+        namespaces:
+          from: All
