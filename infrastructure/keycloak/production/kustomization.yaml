@@ -4,6 +4,7 @@ namespace: keycloak-operator
 resources:
   - db-secret.yaml
   - sa-user.yaml
+  - keycloak-admin-secret.yaml
   - kubernetes.yml
   - pg-cluster-keycloak.yaml
   - kc.yaml

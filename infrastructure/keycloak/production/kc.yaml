@@ -5,6 +5,11 @@ metadata:
   namespace: keycloak-operator
 spec:
   instances: 1
+  bootstrapAdmin:
+    user:
+      secret: keycloak-admin-secret
+    service:
+      secret: keycloak-admin-secret
   ingress:
     enabled: false
   db:
@@ -24,4 +29,4 @@ spec:
     hostname: auth.dkroesen.nl
     strict: false
   proxy:
-    headers: xforwarded # double check your reverse proxy sets and overwrites the X-Forwarded-* headers
+    headers: xforwarded
